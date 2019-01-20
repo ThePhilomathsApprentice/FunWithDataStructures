@@ -1,6 +1,5 @@
 #include "myheader.h"
-#include<stdio.h>
-#include<stdlib.h>
+
 
 void createEmp(EMP **headPtr){
 	EMP *emp= createNode();

@@ -1,9 +1,5 @@
-#include<stdio.h>
-#include<stdlib.h>
+
 #include "myheader.h"
-
-
-
 int main(){
 	int choice;
 	EMP *head = NULL ;

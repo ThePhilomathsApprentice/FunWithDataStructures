@@ -1,6 +1,4 @@
 #include "myheader.h"
-#include<stdio.h>
-#include<stdlib.h>
 
 int showMenu(void){
 	int choice;

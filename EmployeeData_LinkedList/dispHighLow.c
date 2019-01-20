@@ -1,6 +1,4 @@
 #include "myheader.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 void dispHighLow(EMP **headPtr){
 

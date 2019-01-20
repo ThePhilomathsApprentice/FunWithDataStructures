@@ -1,7 +1,4 @@
 #include "myheader.h"
-#include<stdio.h>
-#include<stdlib.h>
-
 
 void display(EMP **headPtr){
 	EMP *trav = *headPtr;

@@ -12,19 +12,13 @@ void dispHighLow(EMP **headPtr){
 	EMP *highest=NULL;
 	EMP *lowest=NULL;/* We'll save the Node of the Highest and lowest Salary employee in this Pointers. */ 
 	
-	while(empHigh->next != NULL){
+	while(empHigh != NULL){
 		if((empHigh->empSal) > high){
 			high = empHigh->empSal;
 			highest = empHigh;					
 		}
 		empHigh = empHigh->next;	
-	} /*Check for all the Employee salary except the last Employee. */
-
-	if((empHigh->empSal) > high){
-			high = empHigh->empSal;
-			highest = empHigh;					
-		}/*Check for the last Employee Salary if Lowest */
-
+	} 
 
 	printf("The Employee with Highest Salary is:\n");
 	printf("Employee ID:%d\tEmployee Name:%s\tEmployee Salary:%d\n",highest->empID,highest->empName,highest->empSal); /*Employee Info of Highest Salary Employee.*/
@@ -35,13 +29,9 @@ void dispHighLow(EMP **headPtr){
 			lowest = empLow;					
 		}
 		empLow = empLow->next;	
-	}/*Check for all the Employee salary except the last Employee. */
-
-	if(empLow->empSal <= low){
-			low = empLow->empSal;
-			lowest = empLow;					
-		}/*Check for the last Employee Salary if Lowest. */
-
+	}
+	
+	
 	printf("The Employee with Lowest Salary is:\n");
 	printf("Employee ID:%d\tEmployee Name:%s\tEmployee Salary:%d\n",lowest->empID,lowest->empName,lowest->empSal); /*Employee Info of Lowest Salary Employee.*/
 }

@@ -2,32 +2,31 @@
 
 void dispHighLow(EMP **headPtr){
 
-	EMP *empHigh = *headPtr; /*We'll Use this to Traverse Linked List to find the employee with the Highest Salary. */
+	EMP *empTrav = *headPtr; /*We'll Use this to Traverse Linked List \
+	to find the employee with the Highest and Lowest Salary. */
 
-	EMP *empLow = *headPtr; /*We'll Use this to Traverse Linked List to find the employee with the Lowest Salary. */
-
-	unsigned int high = empHigh->empSal;
-	unsigned int low = empLow->empSal; /* initializing the basic high and lows.*/
+	unsigned int high = empTrav->empSal;
+	unsigned int low = empTrav->empSal; /* initializing the high and low salary with the 1st Employees' Salary.*/
 	
 	EMP *highest=NULL;
 	EMP *lowest=NULL;/* We'll save the Node of the Highest and lowest Salary employee in this Pointers. */ 
 	
-	while(empHigh != NULL){
-		if((empHigh->empSal) > high){
-			high = empHigh->empSal;
-			highest = empHigh;					
+	while(empTrav != NULL){
+		if((empTrav->empSal) > high){
+			high = empTrav->empSal;
+			highest = empTrav;					
 		}
-		empHigh = empHigh->next;	
+		empTrav = empTrav->next;	
 	} 
 
 
-	empLow = *headPtr;
-	while(empLow->next != NULL){
-		if(empLow->empSal <= low){
-			low = empLow->empSal;
-			lowest = empLow;					
+	empTrav = *headPtr;
+	while(empTrav->next != NULL){
+		if(empTrav->empSal <= low){
+			low = empTrav->empSal;
+			lowest = empTrav;					
 		}
-		empLow = empLow->next;	
+		empTrav = empTrav->next;	
 	}
 	
 	

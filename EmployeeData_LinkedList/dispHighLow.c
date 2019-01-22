@@ -9,8 +9,8 @@ void dispHighLow(EMP **headPtr){
 	unsigned int high = empHigh->empSal;
 	unsigned int low = empLow->empSal; /* initializing the basic high and lows.*/
 	
-	EMP *highest;
-	EMP *lowest;/* We'll save the Node of the Highest and lowest Salary employee in this Pointers. */ 
+	EMP *highest=NULL;
+	EMP *lowest=NULL;/* We'll save the Node of the Highest and lowest Salary employee in this Pointers. */ 
 	
 	while(empHigh->next != NULL){
 		if((empHigh->empSal) > high){

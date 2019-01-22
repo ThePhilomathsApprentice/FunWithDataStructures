@@ -20,8 +20,7 @@ void dispHighLow(EMP **headPtr){
 		empHigh = empHigh->next;	
 	} 
 
-	printf("The Employee with Highest Salary is:\n");
-	printf("Employee ID:%d\tEmployee Name:%s\tEmployee Salary:%d\n",highest->empID,highest->empName,highest->empSal); /*Employee Info of Highest Salary Employee.*/
+
 	empLow = *headPtr;
 	while(empLow->next != NULL){
 		if(empLow->empSal <= low){
@@ -32,6 +31,9 @@ void dispHighLow(EMP **headPtr){
 	}
 	
 	
+	printf("The Employee with Highest Salary is:\n");
+	printf("Employee ID:%d\tEmployee Name:%s\tEmployee Salary:%d\n",highest->empID,highest->empName,highest->empSal); /*Employee Info of Highest Salary Employee.*/
+
 	printf("The Employee with Lowest Salary is:\n");
 	printf("Employee ID:%d\tEmployee Name:%s\tEmployee Salary:%d\n",lowest->empID,lowest->empName,lowest->empSal); /*Employee Info of Lowest Salary Employee.*/
 }

@@ -56,8 +56,6 @@ int main()
 
 		}
 
-//		printArray(arr, size); 
-
 		selectionSort(arr, size); 
 		printf("Case %d: ",i); 
 		printArray(arr, size); 

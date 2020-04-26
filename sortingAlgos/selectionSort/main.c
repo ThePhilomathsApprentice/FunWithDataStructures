@@ -56,10 +56,10 @@ int main()
 
 		}
 
-		printArray(arr, size); 
+//		printArray(arr, size); 
 
 		selectionSort(arr, size); 
-		printf("Sorted array: \n"); 
+		printf("Case %d: ",i); 
 		printArray(arr, size); 
 		
 	}

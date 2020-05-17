@@ -17,5 +17,5 @@ dispHighLow.o: dispHighLow.c
 showmenu.o: showMenu.c
 	gcc -c showMenu.c
 
-rm: createEmp.o createNode.o dispHighLow.o main.o showMenu.o
+clean: createEmp.o createNode.o dispHighLow.o main.o showMenu.o
 	rm -r *.o

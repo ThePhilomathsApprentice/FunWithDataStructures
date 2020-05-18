@@ -48,6 +48,33 @@ class LinkedListMan{
 
 	}
 	
+	
+	void printLL(){
+		printf("newLL:");
+		for(struct node *_tempNode= _Head ; _tempNode ; _tempNode = _tempNode->next){
+			
+			printf("%d ",_tempNode->data);
+
+		}
+			printf("\n");
+		
+		
+	}
+	
+
+	bool delNode(struct node **_node){
+		struct node * _tempNode= _Head;
+		
+		while( _tempNode->next != (*_node) ){
+			_tempNode = _tempNode->next;
+			
+		}
+		_tempNode->next = (*_node)->next;
+		free(*_node);
+		return true;
+
+	}
+	
 
 	bool addNode(struct node **_node){
 
@@ -123,9 +150,12 @@ int main(){
 
 		}
 
-		struct node* _node = LL->findMiddle();
-		printf("Case %d: %d \n",i,_node->data); 
-
+		struct node* _midNode = LL->findMiddle();
+		printf("Case %d: %d \n",i,_midNode->data); 
+		
+		//printf("Deleting Middle.\n");
+		bool sucess = LL->delNode(&_midNode);
+		LL->printLL();
 
 		delete LL;
 		LL = NULL;

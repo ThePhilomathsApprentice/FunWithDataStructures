@@ -30,6 +30,8 @@ node_t nodeInit (int val) {
     return x;
 }
 
+/* Print the tailq headed by headTailq.
+ */
 void printTailq (nodeListHead_t* headTailq) {
 
     if (TAILQ_EMPTY(headTailq)) {
@@ -77,8 +79,8 @@ int main ()
     TAILQ_INIT(&head2);
 
     /* Print fresh tailqs */
-    printTailq(&q1);
-    printTailq(&head2);
+    // printTailq(&q1);
+    // printTailq(&head2);
 
 
     /* Initialise tailqs */

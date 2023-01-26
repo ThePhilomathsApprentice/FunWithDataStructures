@@ -13,7 +13,6 @@ struct node {
 };
 typedef struct node node_t;
 
-
 /* struct nodeListHead will be declared such that,
  * it has FIRST and LAST pointers to struct node variable.
  */

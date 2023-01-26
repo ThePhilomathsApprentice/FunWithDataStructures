@@ -32,18 +32,24 @@ node_t nodeInit (int val) {
 
 void printTailq (nodeListHead_t* headTailq) {
 
-    /* iterator pointer to be used during traversal. */
-    node_t *itr = NULL;
+    if (TAILQ_EMPTY(headTailq)) {
+        printf("Tailq is empty!\n");
 
-    printf("Printing tailq now.\n");
-    TAILQ_FOREACH(itr, headTailq, tailq) {
-        printf(" prev_pointer(%p):current_pointer(%p):date(%d):next_pointer(%p)\n",
-                    *(itr->tailq.tqe_prev),
-                    itr,
-                    itr->data,
-                    itr->tailq.tqe_next);
+    } else {
+        /* iterator pointer to be used during traversal. */
+        node_t *itr = NULL;
+
+        printf("Printing tailq now.\n");
+        TAILQ_FOREACH(itr, headTailq, tailq) {
+            printf(" prev_pointer(%p):current_pointer(%p):date(%d):next_pointer(%p)\n",
+                        *(itr->tailq.tqe_prev),
+                        itr,
+                        itr->data,
+                        itr->tailq.tqe_next);
+        }
+        printf("\n");
+
     }
-    printf("\n");
 
 }
 
@@ -87,13 +93,18 @@ int main ()
 
 
     /* print initialised tailqs*/
-    printTailq(&q1);
-    printTailq(&head2);
+    // printTailq(&q1);
+    // printTailq(&head2);
 
 
     /* Manipulate the tailqs.*/
+    TAILQ_CONCAT(&q1, &head2, tailq);
 
+    //TAILQ_CONCAT(&head2, &q1, tailq);
 
+    /* print initialised tailqs*/
+    printTailq(&q1);
+    printTailq(&head2);
 
     /* Clear the tailqs. */
     while (!TAILQ_EMPTY(&q1)) {
@@ -106,8 +117,8 @@ int main ()
         TAILQ_REMOVE(&head2, itr, tailq);
     }
 
-    printTailq(&q1);
-    printTailq(&head2);
+    // printTailq(&q1);
+    // printTailq(&head2);
 
     return 0;
 }

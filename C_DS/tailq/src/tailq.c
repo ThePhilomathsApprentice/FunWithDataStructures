@@ -21,11 +21,11 @@ typedef struct nodeListHead nodeListHead_t;
 
 /* ======================================================================= */
 
-/* Function nodeInit,
+/* Function initNode,
  * initialises int variable data to the value passed as argument and
  * returns an object of struct node.
  */
-node_t nodeInit (int val) {
+node_t initNode (int val) {
     node_t x = { { 0, 0 }, val };
     return x;
 }
@@ -68,8 +68,8 @@ int main ()
     nodeListHead_t head2;
 
     /* data array initialised to use as our sample data/nodes for both queues. */
-    node_t data[3] = { nodeInit(1), nodeInit(2), nodeInit(3) };
-    node_t data2[4] = { nodeInit(5), nodeInit(6), nodeInit(7), nodeInit(8) };
+    node_t data[3] = { initNode(1), initNode(2), initNode(3) };
+    node_t data2[4] = { initNode(5), initNode(6), initNode(7), initNode(8) };
 
     /* iterator pointer to be used during traversal. */
     node_t *itr = NULL;

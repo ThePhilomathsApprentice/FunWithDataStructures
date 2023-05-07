@@ -1,5 +1,5 @@
 fresh: main.c
-	gcc main.c -o main.out
+	gcc main.c -o ./bin/main.out
 
 run: fresh
-	./main.out < testInput
+	./bin/main.out < testInput.txt

@@ -50,7 +50,6 @@ void printTailq (nodeListHead_t* headTailq) {
                         itr->tailq.tqe_next);
         }
         printf("\n");
-
     }
 
 }

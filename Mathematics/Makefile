@@ -11,5 +11,18 @@ count-digits: count-digits.c
 	gcc count-digits.c -o count-digits.out
 	./count-digits.out
 
+trailing-0-factorial: trailing-0-factorial.c
+	gcc trailing-0-factorial.c -o trailing-0-factorial.out
+	./trailing-0-factorial.out
+
+gcd: gcd.c
+	gcc gcd.c -o gcd.out
+	./gcd.out
+
+
+lcm: lcm.c
+	gcc lcm.c -o lcm.out
+	./lcm.out
+
 clean:
 	rm -r *.out

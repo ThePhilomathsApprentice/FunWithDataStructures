@@ -16,19 +16,19 @@ int balancedArrayIndex(vector<int> arr){
 
     for( unsigned  int i =0 ; i<arr.size() ; i++ ){
 
-	right -= arr[i];
+    right -= arr[i];
 
-	if( left == right){
-	    return i;
+    if( left == right){
+        return i;
 
-	    }else{
+        }else{
 
-		left += arr[i];
+        left += arr[i];
 
-		}
+        }
 
-	}
-	return -1;
+    }
+    return -1;
 
     }
 

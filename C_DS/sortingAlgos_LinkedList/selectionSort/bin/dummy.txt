@@ -1,1 +1,0 @@
-File kept only to commit bin directory.

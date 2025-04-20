@@ -1,1 +1,1 @@
-# Repo for hosting data structures related samples.
+# Repo for hosting Data Structures related samples.

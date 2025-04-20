@@ -5,10 +5,10 @@
 #include<stdlib.h>
 
 typedef struct employee{
-	int empID;
-	char empName[30];
-	int empSal;
-	struct employee *next;
+    int empID;
+    char empName[30];
+    int empSal;
+    struct employee *next;
 }EMP;
 
 void display(EMP **);

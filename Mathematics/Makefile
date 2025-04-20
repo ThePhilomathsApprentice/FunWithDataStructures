@@ -19,10 +19,13 @@ gcd: gcd.c
 	gcc gcd.c -o gcd.out
 	./gcd.out
 
-
 lcm: lcm.c
 	gcc lcm.c -o lcm.out
 	./lcm.out
+
+is-prime: is-prime.c
+	gcc is-prime.c -o is-prime.out
+	./is-prime.out
 
 clean:
 	rm -r *.out

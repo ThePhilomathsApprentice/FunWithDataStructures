@@ -12,4 +12,6 @@ make trailing-0-factorial
 make gcd
 
 make lcm
+
+make is-prime
 ```

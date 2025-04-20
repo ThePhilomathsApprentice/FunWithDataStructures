@@ -1,10 +1,9 @@
-bitwise: bitwise_basic.c
+source: bitwise_basic.c
 	$(MAKE) clean
-	gcc bitwise_basic.c -o bin/bitwise.out
-	$(MAKE) run
+	gcc bitwise_basic.c -o bitwise.out
 
-run: ./bin/bitwise.out
-	./bin/bitwise.out
+bitwise: source
+	./bitwise.out
 
-clean: ./bin/bitwise.out
-	rm -rf ./bin/bitwise.out
+clean:
+	rm -rf ./bitwise.out

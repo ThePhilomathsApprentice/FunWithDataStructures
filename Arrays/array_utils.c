@@ -9,3 +9,8 @@ void print_array(int array[], int size_of_array)
     printf("\n");
     printf("============\n");
 }
+
+int max(int a, int b){
+    return (a>b?a:b);
+
+}

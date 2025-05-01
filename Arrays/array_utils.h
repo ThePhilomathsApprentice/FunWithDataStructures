@@ -2,5 +2,6 @@
 #define _ARRAY_UTILS_H_
 
 void print_array(int array[], int size_of_array);
+int max(int a, int b);
 
 #endif

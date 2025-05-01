@@ -8,14 +8,15 @@
 * Random Access
 * Cache Friendliness
 
+
 ###  Run using below commands:
 
 ```
-make largest
+make largest_array
 
 make max_difference
 
-make reverse
+make reverse_array
 
-make search
+make search_sorted_array
 ```

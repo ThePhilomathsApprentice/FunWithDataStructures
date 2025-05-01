@@ -1,3 +1,4 @@
+all: factorial palindrome-numbers count-digits trailing-0-factorial gcd lcm is-prime clean
 
 factorial: factorial.c
 	gcc factorial.c -o factorial.out

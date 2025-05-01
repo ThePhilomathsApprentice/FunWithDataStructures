@@ -7,3 +7,15 @@
 ### Advantages
 * Random Access
 * Cache Friendliness
+
+###  Run using below commands:
+
+```
+make largest
+
+make max_difference
+
+make reverse
+
+make search
+```

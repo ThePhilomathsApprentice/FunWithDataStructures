@@ -9,6 +9,10 @@
 * Cache Friendliness
 
 
+1. balancedArray:
+    -find index of the element around which array is balanced
+
+
 ###  Run using below commands:
 
 ```

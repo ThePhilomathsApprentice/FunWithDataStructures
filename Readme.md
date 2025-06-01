@@ -1,1 +1,3 @@
-# Repo for hosting samples related to Data Structures and Algorithms.
+# Repo for capturing concepts related to Data Structures and Algorithms.
+
+## Can be used to revise.
